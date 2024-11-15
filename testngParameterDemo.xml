@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="variable1" value="Before Method"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url" value="https://www.google.com"></parameter>
+		<parameter name="variable" value="After Method"></parameter>
+		<classes>
+			<class name="day12.parameterDemo"></class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
