@@ -5,7 +5,11 @@
 	<groupId>SeleniumBasicOctober9to10pmTestNG</groupId>
 	<artifactId>SeleniumBasicOctober9to10pmTestNG</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<dependencies>
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
+    <dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
@@ -13,6 +17,12 @@
 			<artifactId>testng</artifactId>
 			<version>7.10.2</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.26.0</version>
 		</dependency>
 
 	</dependencies>
