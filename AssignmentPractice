@@ -13,3 +13,16 @@ for the users.
 1. https://opensource-demo.orangehrmlive.com/web/index.php/buzz/viewBuzz - Navigate to all the menu option present on the left sidebar
 and click on each of them and in-between wait for 2000 ms
 
+22nd Nov
+-------
+Ref purpose - https://www.guru99.com/xpath-selenium.html
+
+Xpath Axes on Website - https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+- Ancestor
+- Descendant
+- Following
+- Sibling
+- Preceding
+- Sibling
+    - following-sibling
+    - preceding-sibling
