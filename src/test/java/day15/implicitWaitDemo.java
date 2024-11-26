@@ -82,3 +82,10 @@ public class implicitWaitDemo {
         dyElement.click();
     }
 }
+
+// How to read value from Excel
+// TestNG Listerner
+// Log4j
+// Extend Report
+// Framework Creation (action class, select class, javascriptExecutor)
+
