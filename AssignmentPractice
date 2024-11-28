@@ -26,3 +26,23 @@ Xpath Axes on Website - https://ecommerce-playground.lambdatest.io/index.php?rou
 - Sibling
     - following-sibling
     - preceding-sibling
+
+26th Nov
+-------
+
+1. Create an excel with all the value require for register and use on  -  https://ecommerce-playground.lambdatest.io/index.php?route=account/register
+Do - 4 Registration
+
+27th Nov
+--------
+-> Need to update the code for Draganddrop - Use iframe logic
+
+Action Class -
+- Right Click
+- Double Click
+- Click and Hold
+
+-> Select Class
+- selectByIndex
+- selectByVisibleText
+- selectByValue
