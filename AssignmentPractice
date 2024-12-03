@@ -46,3 +46,15 @@ Action Class -
 - selectByIndex
 - selectByVisibleText
 - selectByValue
+
+------------------
+PageObject
+-> 20 Pages
+-> loginPage.java
+-> registrationPage.java
+-> aboutusPage.java
+-> menuOption.java
+
+
+PageFactory  -
+
