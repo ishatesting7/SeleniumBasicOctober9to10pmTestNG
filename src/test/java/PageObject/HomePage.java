@@ -55,7 +55,7 @@ public class HomePage {
 
         System.out.println("INSIDE Validate LOGIN");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

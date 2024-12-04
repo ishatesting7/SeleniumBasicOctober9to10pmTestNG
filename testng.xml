@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<listeners>
+		<listener class-name="Listeners.ExtendReportListener"></listener>
+	</listeners>
 	<test thread-count="5" name="Test">
-		<groups>
-			<run>
-				<exclude name="Smoke"></exclude>
-			</run>
-		</groups>
+
 		<classes>
-			<class name="day11.AttributeDemo3" />
+			<class name="TestCases.LoginTest" />
+			<class name="TestCases.ReportDemo"></class>
 		</classes>
 	</test> <!--
 	Test -->
