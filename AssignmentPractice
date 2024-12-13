@@ -64,3 +64,129 @@ Assignment - 3rd Decemeber
 
 AddToCart and Make the Payment - Do the assertion on the final page.
 
+==============================================================
+
+Cucumber
+
+given
+when
+and
+then
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.20.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.20.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.20.1</version>
+    <scope>test</scope>
+</dependency>
+
+
+FEATURE FILE  (.feature)
+STEP DEFINITION FILE (.java)
+TEST RUNNER FILE
+
+Feature file (Gherkin Language) -
+
+
+
+Feature: Verify login functionality
+
+
+Background:
+           Given - User open a browsers
+           And - Enter the URL - https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+           Then - Enter the creds
+           Then - Click on Login Button
+
+Scenario: validate leaves
+    And - Click on Leaves
+
+
+Sceanrio: validate organization
+    And - Click on Organization
+
+
+Scenario outline:
+    Given - User open a browsers
+    And - Enter the URL - https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+    Then - Enter the <username> and <password>
+    Then - Click on Login Button
+    And - Click on Leaves
+
+Example:
+    | username | password |
+    | admin    | admin12  |
+    | admin1   | admin21  |
+
+
+
+Step Definition file ( .java)
+--------------------
+
+           @Given('User open a browsers')
+           void User_open_a_browsers()
+           {
+           WebDriver driver = new ChromeDriver();
+           driver.get("Open the URL");
+           }
+
+
+           @And('Enter the URL - https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+           void Enter_the_URL_https://opensource-demo.orangehrmlive.com/web/index.php/auth/login()
+           {
+           driver.get('application url');
+           }
+
+
+
+
+           And - Enter the URL - https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+           Then - Enter the creds
+           Then - Click on Login Button
+
+
+TEST RUNNER FILE (.JAVA)
+
+@Cucumberoption(c.class)
+void testrunner()
+{
+
+        stepDefinition:
+        feature:
+        plugin
+        tags
+        monochrome
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

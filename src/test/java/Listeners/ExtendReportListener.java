@@ -86,6 +86,7 @@ public class ExtendReportListener implements ITestListener {
         test.get().getModel().setEndTime(getTime(result.getEndMillis()));
     }
 
+    @Override
     public synchronized void onTestSkipped(ITestResult result)
     {
         String methodName = result.getMethod().getMethodName();
